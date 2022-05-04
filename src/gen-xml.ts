@@ -1155,6 +1155,26 @@ function genXmlBodyProperties(slideObject: ISlideObject | TableCell): string {
 		 */
 		bodyProperties += slideObject.options._bodyProp.autoFit !== false ? '<a:spAutoFit/>' : ''
 
+		// WIP: TEST:
+		if (slideObject.options.shadow) {
+			slideObject.options.shadow.type = slideObject.options.shadow.type || 'outer'
+			slideObject.options.shadow.blur = valToPts(slideObject.options.shadow.blur || 8)
+			slideObject.options.shadow.offset = valToPts(slideObject.options.shadow.offset || 4)
+			slideObject.options.shadow.angle = Math.round((slideObject.options.shadow.angle || 270) * 60000)
+			slideObject.options.shadow.opacity = Math.round((slideObject.options.shadow.opacity || 0.75) * 100000)
+			slideObject.options.shadow.color = slideObject.options.shadow.color || DEF_TEXT_SHADOW.color
+
+			bodyProperties += '<a:effectLst>'
+			bodyProperties += '<a:' + slideObject.options.shadow.type + 'Shdw sx="100000" sy="100000" kx="0" ky="0" '
+			bodyProperties += ' algn="bl" rotWithShape="0" blurRad="' + slideObject.options.shadow.blur + '" '
+			bodyProperties += ' dist="' + slideObject.options.shadow.offset + '" dir="' + slideObject.options.shadow.angle + '">'
+			bodyProperties += '<a:srgbClr val="' + slideObject.options.shadow.color + '">'
+			bodyProperties += '<a:alpha val="' + slideObject.options.shadow.opacity + '"/></a:srgbClr>'
+			bodyProperties += '</a:outerShdw>'
+			bodyProperties += '</a:effectLst>'
+		}
+		// WIP: doesnt work, but PPT does allow this one a text-run (text format) basis
+
 		// LAST: Close _bodyProp
 		bodyProperties += '</a:bodyPr>'
 	} else {
