@@ -16,6 +16,11 @@
 - [Table of Contents](#table-of-contents)
 - [Introduction](#introduction)
 - [Features](#features)
+	- [Works Everywhere](#works-everywhere)
+	- [Full Featured](#full-featured)
+	- [Simple And Powerful](#simple-and-powerful)
+	- [Export Your Way](#export-your-way)
+	- [HTML to PowerPoint](#html-to-powerpoint)
 - [Live Demos](#live-demos)
 - [Installation](#installation)
 	- [CDN](#cdn)
@@ -42,31 +47,31 @@ This library creates Open Office XML (OOXML) Presentations which are compatible 
 
 # Features
 
-**Works Everywhere**
+## Works Everywhere
 
 - Every modern desktop and mobile browser is supported
 - Integrates with Node, Angular, React, and Electron
 - Compatible with PowerPoint, Keynote, and more
 
-**Full Featured**
+## Full Featured
 
 - All major object types are available (charts, shapes, tables, etc.)
 - Master Slides for academic/corporate branding
 - SVG images, animated gifs, YouTube videos, RTL text, and Asian fonts
 
-**Simple And Powerful**
+## Simple And Powerful
 
 - The absolute easiest PowerPoint library to use
 - Learn as you code will full typescript definitions included
 - Tons of demo code comes included (over 75 slides of features)
 
-**Export Your Way**
+## Export Your Way
 
 - Exports files direct to client browsers with proper MIME-type
 - Other export formats available: base64, blob, stream, etc.
 - Presentation compression options and more
 
-**HTML to PowerPoint**
+## HTML to PowerPoint
 
 - Includes powerful [HTML-to-PowerPoint](#html-to-powerpoint-feature) feature to transform HTML tables into presentations with a single line of code
 
