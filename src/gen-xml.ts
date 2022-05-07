@@ -1155,7 +1155,8 @@ function genXmlBodyProperties(slideObject: ISlideObject | TableCell): string {
 		 */
 		bodyProperties += slideObject.options._bodyProp.autoFit !== false ? '<a:spAutoFit/>' : ''
 
-		// WIP: TEST:
+		// WIP: COPIED FROM ABOVE (does not work):
+		// NEXT: gen in PPT, then copy code
 		if (slideObject.options.shadow) {
 			slideObject.options.shadow.type = slideObject.options.shadow.type || 'outer'
 			slideObject.options.shadow.blur = valToPts(slideObject.options.shadow.blur || 8)
