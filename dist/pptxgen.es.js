@@ -1,4 +1,4 @@
-/* PptxGenJS 3.11.0-beta @ 2022-07-24T20:07:29.203Z */
+/* PptxGenJS 3.11.0-beta @ 2022-07-25T11:21:20.890Z */
 import JSZip from 'jszip';
 
 /******************************************************************************
@@ -6494,7 +6494,7 @@ function createGridLineElement(glOpts) {
 }
 
 /**
- * PptxGenJS: Media Methods
+ * PptxGenJS: Media Methods!
  */
 /**
  * Encode Image/Audio/Video into base64

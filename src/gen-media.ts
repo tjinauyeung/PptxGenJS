@@ -1,5 +1,5 @@
 /**
- * PptxGenJS: Media Methods
+ * PptxGenJS: Media Methods!
  */
 
 import { IMG_BROKEN } from './core-enums'
